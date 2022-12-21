@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "single_sample_gsea"
+version = "0.0.1"
+description = "Single Sample GSEA"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+authors = [
+  {name="Jaka Kokošar"},
+  {name="Martin Špendl"},
+  {name="Ela Praznik"},
+]
+
+maintainers = [
+  {name="Jaka Kokošar"},
+]
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "numba"
+
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jakakokosar/ssGSEA"
+"Bug Reports" = "https://github.com/jakakokosar/ssGSEAissues"
+"Source" = "https://github.com/jakakokosar/ssGSEA"
+
+
+[tool.black]
+skip_string_normalization = "1"
