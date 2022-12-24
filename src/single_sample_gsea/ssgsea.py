@@ -80,4 +80,4 @@ if __name__ == "__main__":
 
     data = pd.DataFrame(data).set_index("gene")
     result = ss_gsea(data, gene_sets)
-    print(result.index.to_list())
+    print(result)
