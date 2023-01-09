@@ -17,7 +17,9 @@ def _isin(a: np.ndarray, b: np.ndarray) -> np.ndarray:
     return result.reshape(a.shape)
 
 
-def ss_gsea(df: pd.DataFrame, gene_sets: dict, alpha: float = 0.25) -> pd.DataFrame:
+def ss_gsea(
+    df: pd.DataFrame, gene_sets: dict, alpha: float = 0.25, callback=None
+) -> pd.DataFrame:
     x = df.values
 
     # rank normalize
@@ -60,6 +62,9 @@ def ss_gsea(df: pd.DataFrame, gene_sets: dict, alpha: float = 0.25) -> pd.DataFr
 
         # save result for corresponding gene set
         scores[gs_name] = enrichment_score
+
+        if callback is not None:
+            callback()
 
     df_results = pd.DataFrame(scores)
     df_results.index = df.columns
