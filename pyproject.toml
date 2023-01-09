@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "single_sample_gsea"
-version = "0.1.0"
+version = "0.2.0"
 description = "Single Sample GSEA"
 readme = "README.md"
 license = {file = "LICENSE"}
