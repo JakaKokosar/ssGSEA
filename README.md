@@ -1,5 +1,9 @@
 # Single Sample GSEA analysis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7573200.svg)](https://doi.org/10.5281/zenodo.7573200)
+
+10.5281/zenodo.7573200
+
 Single-sample geneset enrichment analysis (ssGSEA) is a single-sample extension of the GSEA algorithm. It calculates a separate enrichment score for each sample and gene set pairing [[1]](#1).
 
 ## Install the latest version
